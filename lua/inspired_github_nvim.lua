@@ -74,7 +74,7 @@ v.terminal_color_15 = '#ffffff'  -- white bright
 -- Syntax Groups (descriptions and ordering from `:h w18`) --
 -------------------------------------------------------------
 
-Group.new('Boolean', c.orange, c.none, none)         -- Boolean constant: TRUE, false
+Group.new('Boolean', c.aqua, c.none, none)         -- Boolean constant: TRUE, false
 Group.new('Character', c.red, c.none, bold)          -- Character constant: 'c', '/n'
 Group.new('Conditional', c.red, c.none, bold)        -- An if, then, else, endif, switch, etc.
 Group.new('Constant', c.red, c.none, bold)           -- Generic constant
@@ -94,7 +94,7 @@ Group.new('PreCondit', c.aqua, c.none, none)         -- Preprocessor #if, #else,
 Group.new('PreProc', c.aqua, c.none, none)           -- Generic Preprocessor
 Group.new('Repeat', c.red, c.none, bold)             -- A for, do, while, etc.
 Group.new('Statement', c.red, c.none, bold)          -- Generic statement
-Group.new('StorageClass', c.orange, c.none, none)    -- A static, register, volatile, etc.
+Group.new('StorageClass', c.red, c.none, bold)    -- A variable id like let/var/const etc.
 Group.new('String', c.blue, c.none, none)            -- String constant
 Group.new('Structure', c.aqua, c.none, none)         -- A struct, union, enum, etc.
 Group.new('Type', c.yellow, c.none, none)            -- Generic type: int, long, char, etc.
@@ -261,32 +261,12 @@ Group.new('htmlUnderline', c.fg1, c.bg0, ul)
 Group.new('htmlUnderlineItalic', c.fg1, c.bg0, ul + italic)
 
 -- JavaScript
--- Group.new('javaScriptIdentifier', c.purple, c.none, none)
--- Group.new('javaScriptMember', c.blue, c.none, none)
--- Group.new('javaScriptNumber', c.purple, c.none, none)
--- Group.new('javaScriptNull', c.purple, c.none, none)
--- Group.new('javaScriptReserved', c.purple, c.none, none)
--- Group.new('javaScriptStatement', c.purple, c.none, none)
--- Group.new('jsClassFuncName', c.blue, c.none, none)
--- Group.new('jsClassKeyword', c.aqua, c.none, none)
--- Group.new('jsExtendsKeyword', c.aqua, c.none, none)
--- Group.new('jsExportDefault', c.aqua, c.none, none)
--- Group.new('jsTaggedTemplate', c.blue, c.none, none)
--- Group.new('jsTemplateBraces', c.aqua, c.none, none)
--- Group.new('jsGlobalNodeObjects', c.fg1, c.none, none)
--- Group.new('jsGlobalObjects', c.yellow, c.none, none)
--- Group.new('jsObjectKey', c.purple, c.none, none)
--- Group.new('jsFunction', c.purple, c.none, italic)
--- Group.new('jsFuncCall', c.blue, c.none, none)
--- Group.new('jsReturn', c.purple, c.none, none)
--- Group.new('jsStorageClass', c.purple, c.none, italic)
--- Group.new('jsUndefined', c.blue, c.none, none)
--- Group.new('jsClassDefinition', c.yellow, c.none, none)
--- Group.new('jsArrowFuncArgs ', c.aqua, c.none, none)
--- Group.new('jsArrowFunction', c.fg1, c.none, none)
--- Group.new('jsClassMethodType', c.red, c.none, none)
--- Group.new('jsThis', c.purple, c.none, italic)
--- Group.new('Noise', c.aqua, c.none, none)
+Group.new('javaScriptNull', c.aqua, c.none, none)
+Group.new('jsArrowFunction', c.red, c.none, bold)
+Group.new('jsDot', c.red, c.none, none)
+Group.new('jsFunction', c.red, c.none, bold)
+Group.new('jsFuncCall', c.fg1, c.none, none)
+Group.new('jsGlobalObjects', c.aqua, c.none, none)
 
 -- JSX
 Group.new('jsxTagName', c.red, c.none, none)
