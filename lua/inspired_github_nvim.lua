@@ -39,6 +39,7 @@ Color.new('orange', '#ed6a43')
 Color.new('grey',   '#969896')
 
 Color.new('highlight', '#f8eec7')
+Color.new('error', '#cc0000')
 
 
 ---------------------
@@ -101,7 +102,7 @@ Group.new('Type', c.aqua, c.none, none)              -- Generic type: int, long,
 Group.new('Typedef', c.red, c.none, bold)           -- A typedef
 
 Group.new('Comment', c.grey, c.none, italic)         -- Comments
-Group.new('Error', c.red, c.none, bold + reverse)    -- Error
+Group.new('Error', c.error, c.none, bold + reverse)    -- Error
 Group.new('Todo', c.fg0, c.bg0, bold + italic)       -- TODO
 Group.new('Underlined', c.blue, c.none, ul)
 
@@ -279,12 +280,14 @@ Group.new('jsxComponentName', c.green, c.none, none)
 
 -- TypeScript
 Group.new('typescriptAliasDeclaration', c.fg1, c.none, none)
+Group.new('typescriptAliasKeyword', c.red, c.none, bold)
 Group.new('typescriptAsyncFuncKeyword', c.red, c.none, bold)
 Group.new('typescriptArrowFunc', c.red, c.none, bold)
 Group.new('typescriptCall', c.fg1, c.none, none)
 Group.new('typescriptClassExtends', c.red, c.none, bold)
 Group.new('typescriptClassKeyword', c.red, c.none, bold)
 Group.new('typescriptDotNotation', c.red, c.none, none)
+Group.new('typescriptEndColons', c.fg1, c.none, none)
 Group.new('typescriptExport', c.red, c.none, bold)
 Group.new('typescriptFuncKeyword', c.red, c.none, bold)
 Group.new('typescriptFuncTypeArrow', c.red, c.none, bold)
