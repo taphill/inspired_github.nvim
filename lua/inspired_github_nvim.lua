@@ -18,7 +18,7 @@ v.colors_name = 'inspired_github_nvim'
 -------------------
 
 Color.new('bg0', '#ffffff')
-Color.new('bg1', '#353b45')
+Color.new('bg1', '#b3b3b3')
 Color.new('bg2', '#504945')
 Color.new('bg3', '#665c54')
 Color.new('bg4', '#7c6f64')
@@ -29,14 +29,14 @@ Color.new('fg2', '#d5c4a1')
 Color.new('fg3', '#bdae93')
 Color.new('fg4', '#a89984')
 
-Color.new('red',    '#fc929e')
-Color.new('green',  '#8dc891')
+Color.new('red',    '#a71d5d')
+Color.new('green',  '#63a35c')
 Color.new('yellow', '#fac863')
-Color.new('blue',   '#6699cc')
-Color.new('purple', '#c5a5c5')
-Color.new('aqua',   '#88c6Be')
-Color.new('orange', '#ff8b50')
-Color.new('gray',   '#6d6d6d')
+Color.new('blue',   '#183691')
+Color.new('purple', '#795da3')
+Color.new('aqua',   '#0086b3')
+Color.new('orange', '#ed6a43')
+Color.new('gray',   '#969896')
 
 Color.new('highlight', '#586273')
 
@@ -75,27 +75,27 @@ v.terminal_color_15 = '#ffffff'  -- white bright
 -------------------------------------------------------------
 
 Group.new('Boolean', c.orange, c.none, none)         -- Boolean constant: TRUE, false
-Group.new('Character', c.purple, c.none, none)       -- Character constant: 'c', '/n'
-Group.new('Conditional', c.purple, c.none, none)     -- An if, then, else, endif, switch, etc.
-Group.new('Constant', c.purple, c.none, none)        -- Generic constant
+Group.new('Character', c.red, c.none, bold)          -- Character constant: 'c', '/n'
+Group.new('Conditional', c.red, c.none, bold)        -- An if, then, else, endif, switch, etc.
+Group.new('Constant', c.red, c.none, bold)           -- Generic constant
 Group.new('Debug', c.red, c.none, none)              -- Debugging statements
 Group.new('Define', c.aqua, c.none, none)            -- Preprocessor #define
-Group.new('Exception', c.red, c.none, none)          -- A try, catch, throw, etc.
-Group.new('Float', c.blue, c.none, none)             -- Floating point constant: 2.3e10
-Group.new('Function', c.yellow, c.none, none)        -- Function/Method name
+Group.new('Exception', c.red, c.none, bold)          -- A try, catch, throw, etc.
+Group.new('Float', c.aqua, c.none, none)             -- Floating point constant: 2.3e10
+Group.new('Function', c.purple, c.none, bold)        -- Function/Method name
 Group.new('Include', c.aqua, c.none, none)           -- Preprocessor #include
-Group.new('Identifier', c.purple, c.none, none)      -- Variable name
+Group.new('Identifier', c.red, c.none, bold)         -- Variable name
 Group.new('Keyword', c.purple, c.none, none)         -- Any other keyword
 Group.new('Label', c.purple, c.none, none)           -- A case, default, etc.
 Group.new('Macro', c.aqua, c.none, none)             -- Same as Define
-Group.new('Number', c.blue, c.none, none)            -- Number constant: 234, 0xff
-Group.new('Operator', c.fg1, c.none, none)           -- sizeof", "+", "*", etc.
+Group.new('Number', c.aqua, c.none, none)            -- Number constant: 234, 0xff
+Group.new('Operator', c.red, c.none, bold)           -- sizeof", "+", "*", etc.
 Group.new('PreCondit', c.aqua, c.none, none)         -- Preprocessor #if, #else, #endif, etc.
 Group.new('PreProc', c.aqua, c.none, none)           -- Generic Preprocessor
-Group.new('Repeat', c.red, c.none, none)             -- A for, do, while, etc.
-Group.new('Statement', c.red, c.none, none)          -- Generic statement
+Group.new('Repeat', c.red, c.none, bold)             -- A for, do, while, etc.
+Group.new('Statement', c.red, c.none, bold)          -- Generic statement
 Group.new('StorageClass', c.orange, c.none, none)    -- A static, register, volatile, etc.
-Group.new('String', c.green, c.none, none)           -- String constant
+Group.new('String', c.blue, c.none, none)            -- String constant
 Group.new('Structure', c.aqua, c.none, none)         -- A struct, union, enum, etc.
 Group.new('Type', c.yellow, c.none, none)            -- Generic type: int, long, char, etc.
 Group.new('Typedef', c.yellow, c.none, none)         -- A typedef
@@ -261,32 +261,32 @@ Group.new('htmlUnderline', c.fg1, c.bg0, ul)
 Group.new('htmlUnderlineItalic', c.fg1, c.bg0, ul + italic)
 
 -- JavaScript
-Group.new('javaScriptIdentifier', c.purple, c.none, none)
-Group.new('javaScriptMember', c.blue, c.none, none)
-Group.new('javaScriptNumber', c.purple, c.none, none)
-Group.new('javaScriptNull', c.purple, c.none, none)
-Group.new('javaScriptReserved', c.purple, c.none, none)
-Group.new('javaScriptStatement', c.purple, c.none, none)
-Group.new('jsClassFuncName', c.blue, c.none, none)
-Group.new('jsClassKeyword', c.aqua, c.none, none)
-Group.new('jsExtendsKeyword', c.aqua, c.none, none)
-Group.new('jsExportDefault', c.aqua, c.none, none)
-Group.new('jsTaggedTemplate', c.blue, c.none, none)
-Group.new('jsTemplateBraces', c.aqua, c.none, none)
-Group.new('jsGlobalNodeObjects', c.fg1, c.none, none)
-Group.new('jsGlobalObjects', c.yellow, c.none, none)
-Group.new('jsObjectKey', c.purple, c.none, none)
-Group.new('jsFunction', c.purple, c.none, italic)
-Group.new('jsFuncCall', c.blue, c.none, none)
-Group.new('jsReturn', c.purple, c.none, none)
-Group.new('jsStorageClass', c.purple, c.none, italic)
-Group.new('jsUndefined', c.blue, c.none, none)
-Group.new('jsClassDefinition', c.yellow, c.none, none)
-Group.new('jsArrowFuncArgs ', c.aqua, c.none, none)
-Group.new('jsArrowFunction', c.fg1, c.none, none)
-Group.new('jsClassMethodType', c.red, c.none, none)
-Group.new('jsThis', c.purple, c.none, italic)
-Group.new('Noise', c.aqua, c.none, none)
+-- Group.new('javaScriptIdentifier', c.purple, c.none, none)
+-- Group.new('javaScriptMember', c.blue, c.none, none)
+-- Group.new('javaScriptNumber', c.purple, c.none, none)
+-- Group.new('javaScriptNull', c.purple, c.none, none)
+-- Group.new('javaScriptReserved', c.purple, c.none, none)
+-- Group.new('javaScriptStatement', c.purple, c.none, none)
+-- Group.new('jsClassFuncName', c.blue, c.none, none)
+-- Group.new('jsClassKeyword', c.aqua, c.none, none)
+-- Group.new('jsExtendsKeyword', c.aqua, c.none, none)
+-- Group.new('jsExportDefault', c.aqua, c.none, none)
+-- Group.new('jsTaggedTemplate', c.blue, c.none, none)
+-- Group.new('jsTemplateBraces', c.aqua, c.none, none)
+-- Group.new('jsGlobalNodeObjects', c.fg1, c.none, none)
+-- Group.new('jsGlobalObjects', c.yellow, c.none, none)
+-- Group.new('jsObjectKey', c.purple, c.none, none)
+-- Group.new('jsFunction', c.purple, c.none, italic)
+-- Group.new('jsFuncCall', c.blue, c.none, none)
+-- Group.new('jsReturn', c.purple, c.none, none)
+-- Group.new('jsStorageClass', c.purple, c.none, italic)
+-- Group.new('jsUndefined', c.blue, c.none, none)
+-- Group.new('jsClassDefinition', c.yellow, c.none, none)
+-- Group.new('jsArrowFuncArgs ', c.aqua, c.none, none)
+-- Group.new('jsArrowFunction', c.fg1, c.none, none)
+-- Group.new('jsClassMethodType', c.red, c.none, none)
+-- Group.new('jsThis', c.purple, c.none, italic)
+-- Group.new('Noise', c.aqua, c.none, none)
 
 -- JSX
 Group.new('jsxTagName', c.red, c.none, none)
