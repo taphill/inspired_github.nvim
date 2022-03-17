@@ -97,8 +97,8 @@ Group.new('Statement', c.red, c.none, bold)          -- Generic statement
 Group.new('StorageClass', c.red, c.none, bold)       -- A variable id like let/var/const etc.
 Group.new('String', c.blue, c.none, none)            -- String constant
 Group.new('Structure', c.aqua, c.none, none)         -- A struct, union, enum, etc.
-Group.new('Type', c.yellow, c.none, none)            -- Generic type: int, long, char, etc.
-Group.new('Typedef', c.yellow, c.none, none)         -- A typedef
+Group.new('Type', c.aqua, c.none, none)            -- Generic type: int, long, char, etc.
+Group.new('Typedef', c.aqua, c.none, none)         -- A typedef
 
 Group.new('Comment', c.grey, c.none, italic)         -- Comments
 Group.new('Error', c.red, c.none, bold + reverse)    -- Error
@@ -117,18 +117,18 @@ Group.new('Conceal', c.blue, c.bg0, none)            -- Placeholder characters s
 Group.new('Cursor', c.none, c.none, reverse)         -- The character under the cursor
 Group.new('CursorColumn', c.none, c.none, reverse)   -- Current cursor column highlight
 Group.new('CursorLine', c.none, c.bg1, none)
-Group.new('CursorLineNr', c.blue, c.bg1, none)       -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line
+Group.new('CursorLineNr', c.aqua, c.bg1, none)       -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line
 Group.new('CursorIM', c.fg1, c.none, reverse)        -- Like Cursor but used when in IME mode
 Group.new('Directory', c.blue, c.none, bold)         -- Directory names (and other special names in listings)
 Group.new('EndOfBuffer', c.grey, c.none, none)       -- The '~' displayed and the end of a buffer
 Group.new('ErrorMsg', c.bg0, c.red, bold)            -- Error messages on the command line
 Group.new('MatchParen', c.none, c.bg3, bold)         -- Match paired bracket under the cursor
-Group.new('MoreMsg', c.yellow, c.none, bold)         -- More-prompt: -- More --
-Group.new('ModeMsg', c.yellow, c.none, bold)         -- Current mode message (e.g., -- INSERT --)
+Group.new('MoreMsg', c.aqua, c.none, bold)         -- More-prompt: -- More --
+Group.new('ModeMsg', c.aqua, c.none, bold)         -- Current mode message (e.g., -- INSERT --)
 Group.new('NonText', c.grey, c.none, none)           -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line)
 Group.new('Question', c.orange, c.none, bold)        -- 'Press enter' prompt and yes/no questions
-Group.new('Search', c.yellow, c.bg0, reverse)        -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-Group.new('IncSearch', c.yellow, c.bg0, reverse)     -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+Group.new('Search', c.aqua, c.bg0, reverse)        -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+Group.new('IncSearch', c.aqua, c.bg0, reverse)     -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
 Group.new('SpecialKey', c.bg2, c.none, none)         -- Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is
 Group.new('StatusLine', c.bg2, c.fg1, reverse)                                 -- Status line of current window
 Group.new('StatusLineNC', c.bg1, c.fg4, reverse)                               -- Status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window
@@ -143,7 +143,7 @@ Group.new('Visual', c.none, c.highlight, none)             -- Visual mode select
 Group.new('VisualNOS', g.Visual, g.Visual, g.Visual) -- Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
 Group.new('VertSplit', c.bg3, c.none, none)          -- The column separating vertically split windows
 Group.new('WarningMsg', c.red, c.none, bold)         -- Warning messages
-Group.new('WildMenu', c.yellow, c.bg2, bold)         -- Current match in wildmenu completion
+Group.new('WildMenu', c.aqua, c.bg2, bold)         -- Current match in wildmenu completion
 
 -- Diffs
 Group.new('DiffAdd', c.green, c.bg0, reverse)        -- Diff mode: Added line
@@ -153,7 +153,7 @@ Group.new('DiffText', c.yellow, c.bg0, reverse)      -- Diff mode: Changed text 
 
 -- Completion Menu
 Group.new('Pmenu', c.fg1, c.bg2, none)               -- Popup menu: normal item
-Group.new('PmenuSel', c.bg2, c.yellow, bold)           -- Popup menu: selected item
+Group.new('PmenuSel', c.bg2, c.aqua, bold)           -- Popup menu: selected item
 Group.new('PmenuSbar', c.none, c.bg2, none)          -- Popup menu: scrollbar
 Group.new('PmenuThumb', c.none, c.bg4, none)         -- Popup menu: scrollbar thumb
 
@@ -182,7 +182,7 @@ Group.new('cssTagName', c.red, c.none, none)
 Group.new('cssValueLength', c.blue, c.none, none)
 Group.new('cssFunction', c.orange, c.none, none)
 Group.new('cssFunctionName', c.orange, c.none, none)
-Group.new('cssClassName', c.yellow, c.none, none)
+Group.new('cssClassName', c.purple, c.none, none)
 
 Group.new('cssTextProp', c.purple, c.none, none)
 Group.new('cssAnimationProp', c.purple, c.none, none)
@@ -275,7 +275,7 @@ Group.new('jsxCloseString', c.aqua, c.none, none)
 Group.new('jsxAttrib', c.purple, c.none, italic)
 Group.new('jsxEqual', c.aqua, c.none, none)
 Group.new('jsxBraces', c.orange, c.none, none)
-Group.new('jsxComponentName', c.yellow, c.none, none)
+Group.new('jsxComponentName', c.green, c.none, none)
 
 -- TypeScript
 Group.new('typescriptAmbientDeclaration', c.aqua, c.none, none)
@@ -286,19 +286,19 @@ Group.new('typescriptBraces', c.aqua, c.none, none)
 Group.new('typescriptCall', c.fg1, c.none, none)
 Group.new('typescriptCastKeyword', c.aqua, c.none, none)
 Group.new('typescriptClassKeyword', c.purple, c.none, italic)
-Group.new('typescriptClassName', c.yellow, c.none, bold)
+Group.new('typescriptClassName', c.red, c.none, bold)
 Group.new('typescriptDecorator', c.red, c.none, none)
 Group.new('typescriptDefault', c.aqua, c.none, none)
 Group.new('typescriptDOMNodeMethod', c.blue, c.none, none)
 Group.new('typescriptExport', c.aqua, c.none, none)
 Group.new('typescriptFuncKeyword', c.purple, c.none, italic)
-Group.new('typescriptGlobal', c.yellow, c.none, none)
+Group.new('typescriptGlobal', c.red, c.none, none)
 Group.new('typescriptIdentifierName', c.blue, c.none, none)
 Group.new('typescriptImport', c.aqua, c.none, none)
 Group.new('typescriptInterfaceKeyword', c.red, c.none, none)
 Group.new('typescriptMember', c.fg1, c.none, none)
 Group.new('typescriptModule', c.aqua, c.none, none)
-Group.new('typescriptNull', c.yellow, c.none, none)
+Group.new('typescriptNull', c.aqua, c.none, none)
 Group.new('typescriptObjectLiteral', c.aqua, c.none, none)
 Group.new('typescriptParens', c.aqua, c.none, none)
 Group.new('typescriptStatementKeyword', c.purple, c.none, none)
@@ -315,7 +315,7 @@ Group.new('elmDelimiter', c.fg1, c.none, none)
 Group.new('elmFuncName', c.purple, c.none, none)
 Group.new('elmLetBlockDefinition', c.red, c.none, none)
 Group.new('elmOperator', c.aqua, c.none, none)
-Group.new('elmType', c.yellow, c.none, none)
+Group.new('elmType', c.red, c.none, bold)
 Group.new('elmTypedef', c.red, c.none, none)
 
 -- C
@@ -330,7 +330,7 @@ Group.new('objcDirective', c.blue, c.none, none)
 Group.new('elixirDocString', c.grey, c.none, none)
 Group.new('elixirStringDelimiter', c.green, c.none, none)
 Group.new('elixirInterpolationDelimiter', c.aqua, c.none, none)
-Group.new('elixirModuleDeclaration', c.yellow, c.none, none)
+Group.new('elixirModuleDeclaration', c.red, c.none, none)
 
 -- Go
 Group.new('goDirective', c.aqua, c.none, none)
@@ -389,10 +389,10 @@ Group.new('jsonString', c.fg1, c.none, none)
 -- Markdown
 Group.new('markdownH1', c.green, c.none, bold)
 Group.new('markdownH2', c.green, c.none, bold)
-Group.new('markdownH3', c.yellow, c.none, bold)
-Group.new('markdownH4', c.yellow, c.none, bold)
-Group.new('markdownH5', c.yellow, c.none, none)
-Group.new('markdownH6', c.yellow, c.none, none)
+Group.new('markdownH3', c.aqua, c.none, bold)
+Group.new('markdownH4', c.aqua, c.none, bold)
+Group.new('markdownH5', c.aqua, c.none, none)
+Group.new('markdownH6', c.aqua, c.none, none)
 Group.new('markdownCode', c.aqua, c.none, none)
 Group.new('markdownCodeBlock', c.aqua, c.none, none)
 Group.new('markdownCodeDelimiter', c.aqua, c.none, none)
