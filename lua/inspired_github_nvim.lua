@@ -261,12 +261,12 @@ Group.new('htmlUnderline', c.fg1, c.bg0, ul)
 Group.new('htmlUnderlineItalic', c.fg1, c.bg0, ul + italic)
 
 -- JavaScript
-Group.new('javaScriptNull', c.aqua, c.none, none)
 Group.new('jsArrowFunction', c.red, c.none, bold)
 Group.new('jsDot', c.red, c.none, none)
 Group.new('jsFunction', c.red, c.none, bold)
 Group.new('jsFuncCall', c.fg1, c.none, none)
 Group.new('jsGlobalObjects', c.aqua, c.none, none)
+Group.new('jsNull', c.aqua, c.none, none)
 
 -- JSX
 Group.new('jsxTagName', c.red, c.none, none)
