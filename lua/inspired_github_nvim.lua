@@ -97,8 +97,8 @@ Group.new('Statement', c.red, c.none, bold)          -- Generic statement
 Group.new('StorageClass', c.red, c.none, bold)       -- A variable id like let/var/const etc.
 Group.new('String', c.blue, c.none, none)            -- String constant
 Group.new('Structure', c.aqua, c.none, none)         -- A struct, union, enum, etc.
-Group.new('Type', c.aqua, c.none, none)            -- Generic type: int, long, char, etc.
-Group.new('Typedef', c.aqua, c.none, none)         -- A typedef
+Group.new('Type', c.aqua, c.none, none)              -- Generic type: int, long, char, etc.
+Group.new('Typedef', c.red, c.none, bold)           -- A typedef
 
 Group.new('Comment', c.grey, c.none, italic)         -- Comments
 Group.new('Error', c.red, c.none, bold + reverse)    -- Error
@@ -278,33 +278,21 @@ Group.new('jsxBraces', c.orange, c.none, none)
 Group.new('jsxComponentName', c.green, c.none, none)
 
 -- TypeScript
--- Group.new('typescriptAmbientDeclaration', c.aqua, c.none, none)
--- Group.new('typescriptAsyncFuncKeyword', c.red, c.none, none)
--- Group.new('typescriptArrowFunc', c.fg1, c.none, none)
--- Group.new('typescriptBOMWindowMethod', c.blue, c.none, none)
--- Group.new('typescriptBraces', c.aqua, c.none, none)
--- Group.new('typescriptCall', c.fg1, c.none, none)
--- Group.new('typescriptCastKeyword', c.aqua, c.none, none)
--- Group.new('typescriptClassKeyword', c.purple, c.none, italic)
--- Group.new('typescriptClassName', c.red, c.none, bold)
--- Group.new('typescriptDecorator', c.red, c.none, none)
--- Group.new('typescriptDefault', c.aqua, c.none, none)
--- Group.new('typescriptDOMNodeMethod', c.blue, c.none, none)
--- Group.new('typescriptExport', c.aqua, c.none, none)
--- Group.new('typescriptFuncKeyword', c.purple, c.none, italic)
--- Group.new('typescriptGlobal', c.red, c.none, none)
--- Group.new('typescriptIdentifierName', c.blue, c.none, none)
--- Group.new('typescriptImport', c.aqua, c.none, none)
--- Group.new('typescriptInterfaceKeyword', c.red, c.none, none)
--- Group.new('typescriptMember', c.fg1, c.none, none)
--- Group.new('typescriptModule', c.aqua, c.none, none)
--- Group.new('typescriptNull', c.aqua, c.none, none)
--- Group.new('typescriptObjectLiteral', c.aqua, c.none, none)
--- Group.new('typescriptParens', c.aqua, c.none, none)
--- Group.new('typescriptStatementKeyword', c.purple, c.none, none)
--- Group.new('typescriptTemplateSB', c.aqua, c.none, none)
--- Group.new('typescriptTestGlobal', c.blue, c.none, none)
--- Group.new('typescriptVariable', c.purple, c.none, italic)
+Group.new('typescriptAliasDeclaration', c.fg1, c.none, none)
+Group.new('typescriptAsyncFuncKeyword', c.red, c.none, bold)
+Group.new('typescriptArrowFunc', c.red, c.none, bold)
+Group.new('typescriptCall', c.fg1, c.none, none)
+Group.new('typescriptClassExtends', c.red, c.none, bold)
+Group.new('typescriptClassKeyword', c.red, c.none, bold)
+Group.new('typescriptDotNotation', c.red, c.none, none)
+Group.new('typescriptExport', c.red, c.none, bold)
+Group.new('typescriptFuncKeyword', c.red, c.none, bold)
+Group.new('typescriptFuncTypeArrow', c.red, c.none, bold)
+Group.new('typescriptIdentifier', c.fg1, c.none, none)
+Group.new('typescriptImport', c.red, c.none, bold)
+Group.new('typescriptTemplateSB', c.fg1, c.none, none)
+Group.new('typescriptTypeReference', c.fg1, c.none, none)
+Group.new('typescriptUnion', c.red, c.none, bold)
 
 -- Elm
 Group.new('elmAlias', c.red, c.none, none)
