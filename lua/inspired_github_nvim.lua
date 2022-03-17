@@ -36,7 +36,7 @@ Color.new('blue',   '#183691')
 Color.new('purple', '#795da3')
 Color.new('aqua',   '#0086b3')
 Color.new('orange', '#ed6a43')
-Color.new('gray',   '#969896')
+Color.new('grey',   '#969896')
 
 Color.new('highlight', '#586273')
 
@@ -74,7 +74,7 @@ v.terminal_color_15 = '#ffffff'  -- white bright
 -- Syntax Groups (descriptions and ordering from `:h w18`) --
 -------------------------------------------------------------
 
-Group.new('Boolean', c.aqua, c.none, none)         -- Boolean constant: TRUE, false
+Group.new('Boolean', c.aqua, c.none, none)           -- Boolean constant: TRUE, false
 Group.new('Character', c.red, c.none, bold)          -- Character constant: 'c', '/n'
 Group.new('Conditional', c.red, c.none, bold)        -- An if, then, else, endif, switch, etc.
 Group.new('Constant', c.red, c.none, bold)           -- Generic constant
@@ -94,13 +94,13 @@ Group.new('PreCondit', c.aqua, c.none, none)         -- Preprocessor #if, #else,
 Group.new('PreProc', c.aqua, c.none, none)           -- Generic Preprocessor
 Group.new('Repeat', c.red, c.none, bold)             -- A for, do, while, etc.
 Group.new('Statement', c.red, c.none, bold)          -- Generic statement
-Group.new('StorageClass', c.red, c.none, bold)    -- A variable id like let/var/const etc.
+Group.new('StorageClass', c.red, c.none, bold)       -- A variable id like let/var/const etc.
 Group.new('String', c.blue, c.none, none)            -- String constant
 Group.new('Structure', c.aqua, c.none, none)         -- A struct, union, enum, etc.
 Group.new('Type', c.yellow, c.none, none)            -- Generic type: int, long, char, etc.
 Group.new('Typedef', c.yellow, c.none, none)         -- A typedef
 
-Group.new('Comment', c.gray, c.none, italic)         -- Comments
+Group.new('Comment', c.grey, c.none, italic)         -- Comments
 Group.new('Error', c.red, c.none, bold + reverse)    -- Error
 Group.new('Todo', c.fg0, c.bg0, bold + italic)       -- TODO
 Group.new('Underlined', c.blue, c.none, ul)
@@ -117,15 +117,15 @@ Group.new('Conceal', c.blue, c.bg0, none)            -- Placeholder characters s
 Group.new('Cursor', c.none, c.none, reverse)         -- The character under the cursor
 Group.new('CursorColumn', c.none, c.none, reverse)   -- Current cursor column highlight
 Group.new('CursorLine', c.none, c.bg1, none)
-Group.new('CursorLineNr', c.yellow, c.bg1, none)     -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line
+Group.new('CursorLineNr', c.blue, c.bg1, none)       -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line
 Group.new('CursorIM', c.fg1, c.none, reverse)        -- Like Cursor but used when in IME mode
-Group.new('Directory', c.orange, c.none, bold)       -- Directory names (and other special names in listings)
-Group.new('EndOfBuffer', c.gray, c.none, none)       -- The '~' displayed and the end of a buffer
+Group.new('Directory', c.blue, c.none, bold)         -- Directory names (and other special names in listings)
+Group.new('EndOfBuffer', c.grey, c.none, none)       -- The '~' displayed and the end of a buffer
 Group.new('ErrorMsg', c.bg0, c.red, bold)            -- Error messages on the command line
 Group.new('MatchParen', c.none, c.bg3, bold)         -- Match paired bracket under the cursor
 Group.new('MoreMsg', c.yellow, c.none, bold)         -- More-prompt: -- More --
 Group.new('ModeMsg', c.yellow, c.none, bold)         -- Current mode message (e.g., -- INSERT --)
-Group.new('NonText', c.gray, c.none, none)           -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line)
+Group.new('NonText', c.grey, c.none, none)           -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line)
 Group.new('Question', c.orange, c.none, bold)        -- 'Press enter' prompt and yes/no questions
 Group.new('Search', c.yellow, c.bg0, reverse)        -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
 Group.new('IncSearch', c.yellow, c.bg0, reverse)     -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
@@ -158,9 +158,9 @@ Group.new('PmenuSbar', c.none, c.bg2, none)          -- Popup menu: scrollbar
 Group.new('PmenuThumb', c.none, c.bg4, none)         -- Popup menu: scrollbar thumb
 
 -- Gutter
-Group.new('Folded', c.gray, c.bg1, italic)           -- Line used for closed folds
-Group.new('FoldColumn', c.gray, c.bg1, none)         -- Column where folds are displayed
-Group.new('LineNr', c.gray, c.none, none)            -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+Group.new('Folded', c.grey, c.bg1, italic)           -- Line used for closed folds
+Group.new('FoldColumn', c.grey, c.bg1, none)         -- Column where folds are displayed
+Group.new('LineNr', c.grey, c.none, none)            -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 Group.new('SignColumn', c.fg1, c.none, none)         -- column where signs are displayed
 
 -- Spelling
@@ -327,7 +327,7 @@ Group.new('objcTypeModifier', c.red, c.none, none)
 Group.new('objcDirective', c.blue, c.none, none)
 
 -- Elixir
-Group.new('elixirDocString', c.gray, c.none, none)
+Group.new('elixirDocString', c.grey, c.none, none)
 Group.new('elixirStringDelimiter', c.green, c.none, none)
 Group.new('elixirInterpolationDelimiter', c.aqua, c.none, none)
 Group.new('elixirModuleDeclaration', c.yellow, c.none, none)
@@ -396,19 +396,19 @@ Group.new('markdownH6', c.yellow, c.none, none)
 Group.new('markdownCode', c.aqua, c.none, none)
 Group.new('markdownCodeBlock', c.aqua, c.none, none)
 Group.new('markdownCodeDelimiter', c.aqua, c.none, none)
-Group.new('markdownBlockquote', c.gray, c.none, none)
-Group.new('markdownListMarker', c.gray, c.none, none)
-Group.new('markdownOrderedListMarker', c.gray, c.none, none)
-Group.new('markdownRule', c.gray, c.none, none)
-Group.new('markdownHeadingRule', c.gray, c.none, none)
+Group.new('markdownBlockquote', c.grey, c.none, none)
+Group.new('markdownListMarker', c.grey, c.none, none)
+Group.new('markdownOrderedListMarker', c.grey, c.none, none)
+Group.new('markdownRule', c.grey, c.none, none)
+Group.new('markdownHeadingRule', c.grey, c.none, none)
 Group.new('markdownUrlDelimiter', c.fg3, c.none, none)
 Group.new('markdownLinkDelimiter', c.fg3, c.none, none)
 Group.new('markdownLinkTextDelimiter', c.fg3, c.none, none)
 Group.new('markdownHeadingDelimiter', c.orange, c.none, none)
 Group.new('markdownUrl', c.purple, c.none, none)
 Group.new('markdownUrlTitleDelimiter', c.green, c.none, none)
-Group.new('markdownLinkText', c.gray, c.none, ul)
-Group.new('markdownIdDeclaration', c.gray, c.none, ul)
+Group.new('markdownLinkText', c.grey, c.none, ul)
+Group.new('markdownIdDeclaration', c.grey, c.none, ul)
 Group.new('markdownItalic', c.fg3, c.none, italic)
 
 
