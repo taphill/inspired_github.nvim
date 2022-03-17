@@ -19,7 +19,7 @@ v.colors_name = 'inspired_github_nvim'
 
 Color.new('bg0', '#ffffff')
 Color.new('bg1', '#b3b3b3')
-Color.new('bg2', '#504945')
+Color.new('bg2', '#f5f5f5')
 Color.new('bg3', '#665c54')
 Color.new('bg4', '#7c6f64')
 
@@ -38,7 +38,7 @@ Color.new('aqua',   '#0086b3')
 Color.new('orange', '#ed6a43')
 Color.new('grey',   '#969896')
 
-Color.new('highlight', '#586273')
+Color.new('highlight', '#f8eec7')
 
 
 ---------------------
