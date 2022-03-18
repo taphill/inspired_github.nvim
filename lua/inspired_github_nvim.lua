@@ -171,7 +171,8 @@ Group.new('SpellLocal', c.none, c.none, uc)            -- Word that is recognize
 Group.new('SpellRare', c.purple, c.none, uc)           -- Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
 
 -- LSP
-Group.new('LspDiagnosticsErrorSign', c.error, c.none, none)           -- Line used for closed folds
+Group.new('LspDiagnosticsUnderlineError', c.error, c.none, none)
+Group.new('LspDiagnosticsUnderlineHint', c.grey, c.none, none)
 
 
 ------------------------------------
