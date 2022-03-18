@@ -170,6 +170,9 @@ Group.new('SpellCap', c.green, c.none, italic + bold)  -- Word that should start
 Group.new('SpellLocal', c.none, c.none, uc)            -- Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
 Group.new('SpellRare', c.purple, c.none, uc)           -- Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
 
+-- LSP
+Group.new('LspDiagnosticsErrorSign', c.error, c.none, none)           -- Line used for closed folds
+
 
 ------------------------------------
 -- Language-Specific Highlighting --
