@@ -80,7 +80,7 @@ Group.new('Character', c.red, c.none, bold)          -- Character constant: 'c',
 Group.new('Conditional', c.red, c.none, bold)        -- An if, then, else, endif, switch, etc.
 Group.new('Constant', c.red, c.none, bold)           -- Generic constant
 Group.new('Debug', c.red, c.none, none)              -- Debugging statements
-Group.new('Define', c.aqua, c.none, none)            -- Preprocessor #define
+Group.new('Define', c.red, c.none, bold)             -- Preprocessor #define
 Group.new('Exception', c.red, c.none, bold)          -- A try, catch, throw, etc.
 Group.new('Float', c.aqua, c.none, none)             -- Floating point constant: 2.3e10
 Group.new('Function', c.purple, c.none, bold)        -- Function/Method name
@@ -88,16 +88,16 @@ Group.new('Include', c.red, c.none, bold)            -- Preprocessor #include
 Group.new('Identifier', c.red, c.none, bold)         -- Variable name
 Group.new('Keyword', c.red, c.none, nold)            -- Any other keyword
 Group.new('Label', c.purple, c.none, none)           -- A case, default, etc.
-Group.new('Macro', c.aqua, c.none, none)             -- Same as Define
+Group.new('Macro', c.red, c.none, bold)              -- Same as Define
 Group.new('Number', c.aqua, c.none, none)            -- Number constant: 234, 0xff
 Group.new('Operator', c.red, c.none, bold)           -- sizeof", "+", "*", etc.
-Group.new('PreCondit', c.aqua, c.none, none)         -- Preprocessor #if, #else, #endif, etc.
-Group.new('PreProc', c.aqua, c.none, none)           -- Generic Preprocessor
+Group.new('PreCondit', c.red, c.none, bold)          -- Preprocessor #if, #else, #endif, etc.
+Group.new('PreProc', c.red, c.none, bold)            -- Generic Preprocessor
 Group.new('Repeat', c.red, c.none, bold)             -- A for, do, while, etc.
 Group.new('Statement', c.red, c.none, bold)          -- Generic statement
 Group.new('StorageClass', c.red, c.none, bold)       -- A variable id like let/var/const etc.
 Group.new('String', c.blue, c.none, none)            -- String constant
-Group.new('Structure', c.aqua, c.none, none)         -- A struct, union, enum, etc.
+Group.new('Structure', c.red, c.none, bold)          -- A struct, union, enum, etc.
 Group.new('Type', c.aqua, c.none, none)              -- Generic type: int, long, char, etc.
 Group.new('Typedef', c.red, c.none, bold)            -- A typedef
 
