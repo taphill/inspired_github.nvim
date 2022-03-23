@@ -84,9 +84,9 @@ Group.new('Define', c.aqua, c.none, none)            -- Preprocessor #define
 Group.new('Exception', c.red, c.none, bold)          -- A try, catch, throw, etc.
 Group.new('Float', c.aqua, c.none, none)             -- Floating point constant: 2.3e10
 Group.new('Function', c.purple, c.none, bold)        -- Function/Method name
-Group.new('Include', c.aqua, c.none, none)           -- Preprocessor #include
+Group.new('Include', c.red, c.none, bold)            -- Preprocessor #include
 Group.new('Identifier', c.red, c.none, bold)         -- Variable name
-Group.new('Keyword', c.purple, c.none, none)         -- Any other keyword
+Group.new('Keyword', c.red, c.none, nold)            -- Any other keyword
 Group.new('Label', c.purple, c.none, none)           -- A case, default, etc.
 Group.new('Macro', c.aqua, c.none, none)             -- Same as Define
 Group.new('Number', c.aqua, c.none, none)            -- Number constant: 234, 0xff
@@ -99,10 +99,10 @@ Group.new('StorageClass', c.red, c.none, bold)       -- A variable id like let/v
 Group.new('String', c.blue, c.none, none)            -- String constant
 Group.new('Structure', c.aqua, c.none, none)         -- A struct, union, enum, etc.
 Group.new('Type', c.aqua, c.none, none)              -- Generic type: int, long, char, etc.
-Group.new('Typedef', c.red, c.none, bold)           -- A typedef
+Group.new('Typedef', c.red, c.none, bold)            -- A typedef
 
 Group.new('Comment', c.grey, c.none, italic)         -- Comments
-Group.new('Error', c.error, c.none, bold + reverse)    -- Error
+Group.new('Error', c.error, c.none, bold + reverse)  -- Error
 Group.new('Todo', c.fg0, c.bg0, bold + italic)       -- TODO
 Group.new('Underlined', c.blue, c.none, ul)
 
@@ -366,9 +366,7 @@ Group.new('djangoVarBlock', c.fg1, c.none, none)
 -- Ruby
 Group.new('rubyExceptionHandler', c.red, c.none, none)
 Group.new('rubyHelper', c.fg1, c.none, none)
-Group.new('rubyInterpolationDelimiter', c.aqua, c.none, none)
 Group.new('rubyMagicComment', c.fg1, c.none, none)
-Group.new('rubyStringDelimiter', c.green, c.none, none)
 
 -- HCL
 -- requires hashivim/vim-terraform
