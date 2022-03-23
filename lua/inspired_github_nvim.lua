@@ -364,10 +364,9 @@ Group.new('djangoTagBlock', c.fg1, c.none, none)
 Group.new('djangoVarBlock', c.fg1, c.none, none)
 
 -- Ruby
-Group.new('rubyExceptionHandler', c.red, c.none, none)
+Group.new('rubyExceptionHandler', c.red, c.none, bold)
 Group.new('rubyHelper', c.fg1, c.none, none)
-Group.new('rubyInterpolationDelimiter', c.fg1, c.none, none)
-Group.new('rubyKeywordAsMethod', c.red, c.none, bold)
+Group.new('rubyInterpolationDelimiter', c.green, c.none, none)
 Group.new('rubyMagicComment', c.fg1, c.none, none)
 Group.new('rubyStringDelimiter', c.blue, c.none, none)
 Group.new('rubySymbol', c.fg1, c.none, none)
